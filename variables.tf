@@ -5,5 +5,5 @@ variable "project_id" {
 
 variable "region" {
     type = string
-    decription = "Google Cloud location of resources"
+    description = "Google Cloud location of resources"
 }
