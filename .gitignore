@@ -4,3 +4,5 @@
 *.ssh
 *.out
 *.json
+*commands.txt
+*Zone.Identifier
