@@ -36,7 +36,7 @@ jobs:
     
     # Generate an execution plan for terraform
     - name: Terraform Plan
-      run: terraform plan -lock=false
+      run: terraform plan -out=plan.out
       env:
         GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
     
@@ -44,7 +44,7 @@ jobs:
     # Note: it is recommended to set up a required "strict" status check in your repository for "Terraform Cloud"...
     - name: Terraform Apply
       if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-      run: terraform apply -auto-approve
+      run: terraform apply plan.out
       env:
         GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
     
