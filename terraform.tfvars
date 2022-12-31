@@ -1,2 +1,2 @@
-project_id = "stack-data-pipeline01"
+project_id = "datapipeline2022"
 region = "us-central1"
