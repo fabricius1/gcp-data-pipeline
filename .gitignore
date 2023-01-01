@@ -2,6 +2,6 @@
 *.pem
 *.ssh
 *.out
-*.json
+datapipeline*.json
 *commands.txt
 *Zone.Identifier
