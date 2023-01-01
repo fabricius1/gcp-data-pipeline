@@ -1,7 +1,19 @@
+# terraform 
 *.terraform*
+*.out
+
+# sensitive data
+datapipeline*.json
 *.pem
 *.ssh
-*.out
-datapipeline*.json
+
+# text and doc files
 *commands.txt
 *Zone.Identifier
+*.docx
+
+# python related files
+__pycache__
+*.pyc
+.env
+.myenv
