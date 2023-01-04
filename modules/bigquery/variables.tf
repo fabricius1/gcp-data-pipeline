@@ -29,8 +29,8 @@ variable "description" {
   type        = string
 
   validation {
-    condition = length(var.description) >= 20
-    error_message = "A descrição do dataset deverá ser maior que 20 caracteres." 
+    condition     = length(var.description) >= 20
+    error_message = "A descrição do dataset deverá ser maior que 20 caracteres."
   }
 }
 
@@ -95,10 +95,10 @@ variable "tables" {
   description = "A list of objects which include table_id, schema, clustering, time_partitioning, range_partitioning, expiration_time and labels."
   default     = []
   type = list(object({
-    table_id   = string,
-    schema     = string,
-    description= string,
-    clustering = list(string),
+    table_id            = string,
+    schema              = string,
+    description         = string,
+    clustering          = list(string),
     deletion_protection = bool,
     time_partitioning = object({
       expiration_ms            = string,

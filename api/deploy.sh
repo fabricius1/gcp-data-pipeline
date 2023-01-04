@@ -1,0 +1,1 @@
+gcloud run deploy stack-gcp-data-pipeline-fabricio --source . --region us-central1
